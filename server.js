@@ -20,11 +20,23 @@ const majorScales = {
     },
     'bmajor': {
         scale: "bmajor",
-        notes: ["B♭", "C", "D", "E♭", "F", "G", "A", "B♭"]
+        notes: ["B", "C♯", "D♯", "E", "F♯", "G♯", "A♯", "B"]
+    },
+    'cflatmajor': {
+        scale: "cflatmajor",
+        notes: ["C♭", "D♭", "E♭", "F♭", "G♭", "A♭", "B♭", "C♭"]
     },
     'cmajor': {
         scale: "cmajor",
         notes: ["C", "D", "E", "F", "G", "A", "B", "C"]
+    },
+    'csharpmajor': {
+        scale: "csharpmajor",
+        notes: ["C♯", "D♯", "E♯", "F♯", "G♯", "A♯", "B♯", "C♯"]
+    },
+    'dflatmajor': {
+        scale: "dflatmajor",
+        notes: ["D♭", "E♭", "F", "G♭", "A♭", "B♭", "C", "D♭"]
     },
     'dmajor': {
         scale: "dmajor",
@@ -45,6 +57,14 @@ const majorScales = {
     'fmajor': {
         scale: "fmajor",
         notes: ["F", "G", "A", "B♭", "C", "D", "E", "F"]
+    },
+    'fsharpmajor': {
+        scale: "fsharpmajor",
+        notes: ["F♯", "G♯", "A♯", "B", "C♯", "D♯", "E♯", "F♯"]
+    },
+    'gflatmajor': {
+        scale: "gflatmajor",
+        notes: ["G♭", "A♭", "B♭", "C♭", "D♭", "E♭", "F", "G♭"]
     },
 }
 
