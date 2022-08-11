@@ -71,9 +71,7 @@ const majorScales = {
 app.get('/', (request, response) => { 
     response.send(__dirname + '/index.html')
 })
-app.listen(port, function() {
-    console.log("Node app is running at localhost:" + app.get('port'))
-  })
+
 
 app.get('/api/:scale', (request, response) => {
     const scale = request.params.scale.toLowerCase()
