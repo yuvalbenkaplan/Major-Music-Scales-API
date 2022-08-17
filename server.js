@@ -7,6 +7,7 @@ const connectionString = 'mongodb+srv://yuval:hbU9EtgyGsE9NVc@cluster0.lr4djyn.m
 
 app.use(cors())
 app.use(express.json())
+app.use(express.static('public'))
 
 // const majorScales = {
 //     'amajor': {
