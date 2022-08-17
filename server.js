@@ -74,7 +74,7 @@ app.use(express.json())
 MongoClient.connect(connectionString)
     .then(client => {
         console.log('Connected to database')
-        const db = client.db('MAJOR-MUSIC-SCALES-API')
+        const db = client.db('Major-Music-Scales-API')
         const infoCollection = db.collection('Major-Scales')
     
 
@@ -84,13 +84,14 @@ MongoClient.connect(connectionString)
 
 
     app.get('/api/:scale', (request, response) => {
-        const scale = request.params.scale.toLowerCase()
-        if(majorScales[scale]){
-            response.json(majorScales[scale])
-        }
-        else {
-            response.json(majorScales['invalid'])
-        }
+        const scaleName = request.params.scale.toLowerCase()
+        infoCollection.find({scale: scaleName}).toArray()
+
+        .then(results => {
+            console.log(results)
+            response.json(results[0])
+        })
+        .catch(error => console.error(error))
     })
 })
 
