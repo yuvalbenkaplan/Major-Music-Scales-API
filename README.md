@@ -3,7 +3,7 @@ Full stack app used to look up music scales
 
 **Link to project:** https://major-music-scales-app.herokuapp.com/
 
-![Website thumbnail](images/musicappimg.png)
+![Website thumbnail](images/musicappimg.jpg)
 
 ## How It's Made:
 
